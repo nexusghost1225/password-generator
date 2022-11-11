@@ -33,7 +33,42 @@ conts arNumber = ["0123456789"];
 conts arSpecial = ["!@#$%^&*-_`~"];
 
 //define master list of characters
-var defineMasters = [];
+var masterList = [];
 
 //define a list if chosen types
 var chosen = [];
+
+//if statements
+if (promptNumbers === true) {
+    for (var i=o; i <13; i++ ){
+        var masterList = arNumbers.concat(masterList)
+    }
+}
+if (promptLowercase === true) {
+    for (var i=0; i < 5; i++) {
+        var masterList = arLowercase.concat(masterList);
+    }
+chosen.push("lowercase letters")
+}
+if (promptUppercase === true) {
+    for (var i = 0; i < 5; i++) {
+        var masterList = arUppercase.concat(masterList);
+    } 
+    chosen.push("uppercase letters")
+}
+if (promptSpecial=== true) {
+ for (var i = 0; i = < 12; i++) {
+    var masterList = arSpecial.concat(masterList);
+ }   
+ chosen.push("special characters")
+}
+//if no choices weree selected
+if (!promptSpecial &&
+    !promptUppercase &&
+    !promptNumbers &&
+    !promptLowercase) {
+        window.alert("You must select atleast one character type")
+        var masterList = arLowercase.concat(masterList);
+        chosen.push("lowercase letters")
+    }
+    
