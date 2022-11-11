@@ -1,0 +1,19 @@
+.box{
+    height: 100px;
+    width: 300px;
+    border: solid;
+    color: grey;
+    border-width: 5px;
+    margin-left: 779px; 
+}
+
+.header{
+text-align: center;
+}
+
+.button{
+    background-color: red;
+    font-size: 30px;
+    position: absolute;
+    margin-left: 793px;
+}
